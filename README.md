@@ -33,7 +33,7 @@ ArcBarView是一个底部具有弧线形的一个自定义View。
     </declare-styleable>
 ```
 
-#### ArcBarView的使用
+#### ArcBarView使用渐变色
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -61,3 +61,27 @@ ArcBarView是一个底部具有弧线形的一个自定义View。
 
 ![image](http://oe9ggtbcb.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720170414173234.png)
 
+#### ArcBarView使用arcBarView
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yundoku.arcbarview.MainActivity">
+
+    <com.yundoku.arcbarview.view.ArcBarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:arcBarColor="@color/colorPrimary"
+        app:arcBarHightToArcPercentage="0.2"
+        app:arcBarHightToScreenPercentage="0.4"
+        app:arcBarWidthToArcPercentage="0.1" />
+
+</RelativeLayout>
+```
+
+效果图：
+
+![image](http://oe9ggtbcb.bkt.clouddn.com/wwww.png)
