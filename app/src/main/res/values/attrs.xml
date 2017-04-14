@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ArcBarView">
+        <!-- arcBarHightToScreenPercentage：ArcBarView的高度和屏幕的高度比例 -->
         <attr name="arcBarHightToScreenPercentage" format="float" />
+
+        <!-- arcBarHightToArcPercentage:椭圆的高度一半与ArcBarView的高度比例 -->
         <attr name="arcBarHightToArcPercentage" format="float" />
+
+        <!-- arcBarWidthToArcPercentage:椭圆宽度超出屏幕的总距离的一半与屏幕宽度的比例 -->
         <attr name="arcBarWidthToArcPercentage" format="float" />
-        <attr name="startColor" format="color" />
-        <attr name="centerColor" format="color" />
-        <attr name="endColor" format="color" />
+
+        <!-- ArcBarView的color颜色 -->
+        <attr name="arcBarColor" format="color" />
+
+        <!--是否显示渐变色-->
+        <attr name="arcBarShowGradientColor" format="boolean" />
+        <!-- 开始的渐变色 -->
+        <attr name="arcBarStartGradientColor" format="color" />
+        <!--中间的渐变色-->
+        <attr name="arcBarCenterGradientColor" format="color" />
+        <!-- 最后的渐变色 -->
+        <attr name="arcBarEndGradientColor" format="color" />
     </declare-styleable>
 </resources>
